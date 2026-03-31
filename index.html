@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedSocks dashboards</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #1e293b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tile {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-decoration: none;
+      color: #1e293b;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+    }
+
+    .tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      background: #eef6ff;
+    }
+
+    .tile-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #2563eb;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- LOGO -->
+    <img src="MedSocks_logo.png" alt="MedSocks logo" class="logo">
+
+    <h1>Dashboards</h1>
+
+    <div class="tiles">
+
+      <a class="tile" href="https://miguelcjansen.github.io/ABC-analyse-3.0/" target="_blank">
+        <div class="icon">📊</div>
+        <div class="tile-title">ABC-analyse per product</div>
+      </a>
+
+      <a class="tile" href="https://miguelcjansen.github.io/Voorraad-beloop-verkoop/" target="_blank">
+        <div class="icon">📦</div>
+        <div class="tile-title">Voorraad &amp; verkoop</div>
+      </a>
+
+      <a class="tile" href="https://miguelcjansen.github.io/Klompen-bestelling-advies/" target="_blank">
+        <div class="icon">🛒</div>
+        <div class="tile-title">Klompen bestel advies</div>
+      </a>
+
+    </div>
+
+    <div class="footer">
+      © MedSocks
+    </div>
+
+  </div>
+</body>
+</html>
